@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trường THPT - Ngan Dừa</title>
+  <style>
+    * {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.ts {
+    height: 100%;
+    margin: 0;
+    min-height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: white;
+}
+
+
+.tss {
+    background: #fff;
+    padding: 20px;
+    width: 200%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.dk {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sos {
+    text-align: center;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.tsss {
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00c6ff;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    .tss {
+        max-width: 300px;
+        padding: 16px;
+    }
+
+    .dk {
+        font-size: 10px;
+    }
+}
+.left {
+    width: 60%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ts3 {
+    color: navy;
+}
+
+.sos {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.ts1 {
+    list-style: none;
+    padding: 0;
+}
+
+.ts2 {
+  color: navy;
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+  </style>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="ts">
+  <div class="left">
+    <h1 class="ts3">Trường Trung Học Phổ Thông Ngan Dừa</h1>
+    <ul class="ts1">
+            <li class="ts2">✔ Đào tạo chất lượng cao</li>
+            <li class="ts2">✔ Đội ngũ giáo viên giàu kinh nghiệm</li>
+            <li class="ts2">✔ Môi trường học tập thân thiện</li>
+            <li class="ts2">✔ Cơ sở vật chất hiện đại</li>
+    </ul>
+  </div>
+  <div class="tss">
+    <h2 class="dk">ĐĂNG KÝ TUYỂN SINH</h2>
+    <p class="sos">Trường Trung Học Phổ Thông Ngan Dừa</p>
+
+    <form id="admissionForm">
+        <div class="tsss">
+            <label>Họ và tên</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="tsss">
+            <label>Ngày sinh</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div class="tsss">
+            <label>Giới tính</label>
+            <select id="gender" required>
+                <option value="">-- Chọn --</option>
+                <option>Nam</option>
+                <option>Nữ</option>
+            </select>
+        </div>
+
+        <div class="tsss">
+            <label>Số điện thoại</label>
+            <input type="tel" id="phone" required>
+        </div>
+
+        <div class="tsss">
+            <label>Email</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="tsss">
+            <label>Địa chỉ</label>
+            <textarea id="address"></textarea>
+        </div>
+
+        <div class="tsss">
+            <label>Nguyện vọng đăng ký</label>
+            <select id="class">
+                <option>Lớp 10</option>
+                <option>Lớp 11</option>
+                <option>Lớp 12</option>
+            </select>
+        </div>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+  <script src="script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trường THPT - Ngan Dừa</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- SIDEBAR -->
+<aside id="sidebar">
+  <div class="sidebar-header">
+    <h3>Danh mục</h3>
+  </div>
+
+  <ul class="sidebar-menu">
+    <li><a href="#">Trang chủ</a></li>
+    <li><a href="gt.html">Giới thiệu</a></li>
+
+    <li class="sidebar-dropdown">
+      <a href="#">Cơ cấu tổ chức ▼</a>
+      <ul class="sidebar-submenu">
+        <li><a href="dtn.html">Đoàn Thanh niên</a></li>
+        <li><a href="bm.html">Tổ các bộ môn</a></li>
+        <li><a href="clb.html">Các câu lạc bộ</a></li>
+      </ul>
+    </li>
+
+    <li><a href="kh.html">Kế hoạch giáo dục</a></li>
+    <li><a href="hd.html">Lịch hoạt động</a></li>
+    <li><a href="lh.html">Liên hệ</a></li>
+  </ul>
+</aside>
+
+<!-- Lớp phủ mờ -->
+<div id="overlay"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="school-info">
+          <img src="logo.jpg" alt="logo" class="logo">
+          <div>
+            <div class="school-name">TRƯỜNG THPT Ngan Dừa</div>
+            <div class="school-sub">Năng động • Sáng tạo • Hội nhập</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container navbar-inner">
+       <ul class="menu">
+        <li> <button class="hamburger" id="hamburger" aria-label="Mở menu">☰</button></li>
+        <li><a href="#">Trang chủ</a></li>
+
+        <li><a href="gt.html">Giới thiệu</a></li>
+
+        <li class="dropdown">
+            <a href="#">Cơ cấu tổ chức ▼</a>
+            <ul class="submenu">
+                <li><a href="dtn.html">Đoàn Thanh niên</a></li>
+                <li><a href="bm.html">Tổ các bộ môn</a></li>
+                <li><a href="clb.html">Các câu lạc bộ</a></li>
+            </ul>
+        </li>
+
+        <li><a href="kh.html">Kế hoạch giáo dục</a></li>
+
+        <li><a href="hd.html">Lịch hoạt động</a></li>
+
+        <li><a href="lh.html">Liên hệ</a></li>
+    </ul>
+        <div class="search-wrap">
+          <input type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+        </div>
+      </div>
+    </nav>
+
+    <!-- NEWS TICKER -->
+    <div class="news-ticker">
+      <div class="container ticker-inner">
+        <div class="ticker-label">Thông báo mới:</div>
+        <div class="ticker-track" id="ticker">
+          <div class="ticker-item">→ Thời khóa biểu tuần 13, năm học 2025-2026</div>
+          <div class="ticker-item">→ Kết quả thi học sinh giỏi cấp tỉnh</div>
+          <div class="ticker-item">→ Ngày hội STEM - Tháng 12/2025</div>
+          <div class="ticker-item">→ Tuyển sinh lớp 10: Mở đăng ký trực tuyến</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Trường THPT Ngan Dừa</h1>
+          <p class="lead">
+            Môi trường học tập năng động — Phát triển toàn diện — Khơi nguồn sáng tạo
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="ts.html">Tuyển sinh</a>
+            <a class="btn outline" href="clb.html">Khám phá CLB</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <img src="cc2.jpg" alt="school activity">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT (3 columns) -->
+    <section class="container layout">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar left">
+        <div class="card small">
+          <h4>Thông tin nhanh</h4>
+          <ul class="info-list">
+            <li><strong>Địa chỉ:</strong> Đường Nguyễn Trung Trực, Thành phố Cà Mau</li>
+            <li><strong>Hotline:</strong> 0123 456 789</li>
+            <li><strong>Email:</strong> contact@thptnd.edu.vn</li>
+          </ul>
+        </div>
+
+        <div class="card small">
+          <h4>Sự kiện sắp tới</h4>
+          <ul class="event-list">
+            <li><span>10/12</span> Ngày hội STEM</li>
+            <li><span>20/12</span> Giao lưu Văn nghệ</li>
+            <li><span>05/01</span> Thi HSG cấp trường</li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <section class="main-content">
+        <!-- News / Slider -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Tin nổi bật</h3>
+            <a href="#news" class="link-more">Xem tất cả</a>
+          </div>
+
+          <div class="news-grid" id="newsGrid">
+            <!-- Card items -->
+            <article class="news-card">
+              <img src="" alt="Đang tải">
+              <div class="news-body">
+                <h4>Học sinh đạt giải cuộc thi Tin học</h4>
+                <p>Đội tuyển Tin học của trường giành giải Nhì toàn tỉnh với dự án website học tập.</p>
+                <a href="#" class="read">Đọc tiếp →</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="" alt="Đang tải">
+              <div class="news-body">
+                <h4>Học sinh tham gia tình nguyện</h4>
+                <p>Chương trình "Vì cộng đồng" tổ chức tại Phường Bạc Liêu với sự tham gia của CLB Tình nguyện.</p>
+                <a href="#" class="read">Đọc tiếp →</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="" alt="Đang tải">
+              <div class="news-body">
+                <h4>Hướng dẫn tuyển sinh trực tuyến</h4>
+                <p>Hướng dẫn chi tiết thủ tục, bộ hồ sơ và cách nộp trực tuyến cho lớp 10.</p>
+                <a href="#" class="read">Đọc tiếp →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- CLUBS -->
+        <div class="card" id="clubs">
+          <div class="card-header">
+            <h3>Câu lạc bộ</h3>
+            <h3>Các câu CLB nổi bật</h3>
+          </div>
+
+          <div class="club-grid">
+            <div class="club">
+              <img src="vn.JPG" alt="">
+              <a href="vn.html"><h5>CLB Văn Nghệ</h5></a>
+              <p>Biểu diễn, đam mê và nhiệt huyết của tuổi trẻ</p>
+            </div>
+
+            <div class="club">
+              <img src="bd.jpg" alt="">
+              <a href="bd.html"><h5>CLB Bóng đá</h5></a>
+              <p>Chiến thuật,đoàn kết,kiên trì,fair play</p>
+            </div>
+
+            <div class="club">
+              <img src="bc.jpg" alt="">
+              <a href="bc.html"><h5>CLB Bóng chuyền</h5></a>
+              <p>Chiến thuật,bền bỉ,khéo léo,nhanh nhẹn</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar right">
+        <div class="card small">
+          <h4>Thông báo</h4>
+          <ul class="announce-list">
+            <li><a href="#">Sơ đồ phòng học, năm học 2025-2026</a></li>
+            <li><a href="#">Lịch kiểm tra</a></li>
+            <li><a href="#">Học bổng</a></li>
+          </ul>
+        </div>
+
+        <div class="card small">
+          <h4>Thư viện ảnh</h4>
+          <div class="mini-gallery">
+            <img src="cc1.jpg" alt="tv anh">
+            <img src="cc3.jpg" alt=" tv anh">
+            <img src="cc4.jpg" alt="tv anh">
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ADMISSION CTA -->
+    <section class="admission container" id="admission">
+      <div class="admission-card">
+        <h3>Đăng ký tuyển sinh lớp 10</h3>
+        <p>Nhận hồ sơ trực tuyến, hỗ trợ tư vấn 24/7.</p>
+        <a class="btn primary large" href="ts.html">Đăng ký ngay</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h4>Về chúng tôi</h4>
+          <p>Trường THPT Ngan Dừa — nơi phát triển năng lực và kỹ năng cho học sinh.</p>
+        </div>
+
+        <div>
+          <h4>Liên hệ</h4>
+          <p>Địa chỉ: Đường Nguyễn Trung Trực, Thành phố Cà Mau</p>
+          <p>Hotline: 0123 456 789</p>
+          <p>Email: contact@thptnd.edu.vn</p>
+        </div>
+
+        <div>
+          <h4>Đăng ký nhận tin</h4>
+          <form id="subscribe">
+            <input type="email" placeholder="Email của bạn" required>
+            <button class="btn" type="submit" ><a href="ts.html">Đăng ký</a></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Trường THPT Ngan Dừa — Bản quyền thuộc về nhà trường
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
